@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import SnapKit
+import Kingfisher
 
-class ViewController: UIViewController {
+class BeerListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
