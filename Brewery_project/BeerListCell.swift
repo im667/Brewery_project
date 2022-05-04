@@ -31,7 +31,7 @@ class BeerListCell : UITableViewCell {
             contentView.addSubview($0)
         }
         
-        beerImageView.contentMode = .scaleToFill
+        beerImageView.contentMode = .scaleAspectFit
         
         namelabel.font = .systemFont(ofSize: 18 , weight: .bold)
         namelabel.numberOfLines = 2
@@ -42,6 +42,9 @@ class BeerListCell : UITableViewCell {
         
         
         beerImageView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(16)
+            make.bottom.equalToSuperview().inset(16)
+            make.width.equalTo(52)
             make.centerY.equalToSuperview()
             make.leading.equalTo(16)
         }

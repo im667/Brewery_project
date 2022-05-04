@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BeerDetailViewController: UITableViewController {
     
@@ -21,7 +22,7 @@ class BeerDetailViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
         
         let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 300)
-        let headerView = UIImageView()
+        let headerView = UIImageView(frame: frame)
         let imageURL = URL(string: beer?.imageURL ?? "")
         
         headerView.contentMode = .scaleAspectFit

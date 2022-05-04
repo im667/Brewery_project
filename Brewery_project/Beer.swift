@@ -26,7 +26,7 @@ struct Beer:Decodable {
     enum CodingKeys: String,CodingKey {
         case id, name, description
         case taglineString = "tagline"
-        case imageURL = "image_URL"
+        case imageURL = "image_url"
         case brewersTips = "brewers_tips"
         case foodParing = "food_paring"
 
